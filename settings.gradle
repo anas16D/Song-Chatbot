@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "MajorChatbot"
+include ':app', ':ParallelDots-Java-API-master'
+project(':ParallelDots-Java-API-master').projectDir = new File('libs/ParallelDots-Java-API-master')
